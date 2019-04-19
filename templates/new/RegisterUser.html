@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In</title>
+<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
+<link href="{{ url_for('static',filename='css/bootstrap.min.css') }} " rel="stylesheet">
+<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" >
+</head>
+<body>
+<div class="login-form">
+    <h2>Register New User</h2>
+    <form action="confirmation.php" method="post" id="newuser" name="newuser">
+        <div class="text-center">
+            <img src="" class="img-circle avatar" alt="Avatar">
+        </div>
+        <div class="form-group">
+            <label>NIC</label>
+            <input type="text" class="form-control" placeholder="Enter NIC Number" id="nic" name="nic" required="required">
+            <label>Username</label>
+            <input type="text" class="form-control" placeholder="Enter Username" id="username" name="username" required="required">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password" id="password" name="password" required="required">
+            <label>Re-Enter Password</label>
+            <input type="password" class="form-control" placeholder="Re-Enter Password" id="repassword" name="repassword" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" id="registerbtn" name="registerbtn">Register</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

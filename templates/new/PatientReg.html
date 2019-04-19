@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign In</title>
+<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
+<link href="{{ url_for('static',filename='css/bootstrap.min.css') }} " rel="stylesheet">
+<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" >
+</head>
+<body>
+<div class="Registration-form">
+    <form action="confirmation.php" method="post" class="form-horizontal">
+        <img src="{{ url_for('static', filename='images/TCenter.jpg') }}" width="700px">
+        <div class="col-xs-8 col-xs-offset-4" align="center">
+			<h2 >OSILMO Patient Registration </h2>
+        </div>
+        <div class="col-xs-8 col-xs-offset-4">
+			<h3>Patients' Information</h3>
+		</div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Registration ID</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" name="RegID" required="required">
+            </div>
+        </div>
+		<div class="form-group">
+			<label class="control-label col-xs-4">Full Name</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Enter Patient Name" name="PName" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Date of Birth</label>
+			<div class="col-xs-8">
+                <input type="date" class="form-control" name="DOB" required="required">
+            </div>
+        </div>
+		<div class="form-group">
+			<label class="control-label col-xs-4">Gender</label>
+			<div class="col-xs-8">
+                <select class="form-control" name="Gender" required="required">
+                    <option> </option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+		<div class="form-group">
+			<label class="control-label col-xs-4">School</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Previous School or Pre-School Name" name="School" >
+            </div>
+        </div>
+        <div class="col-xs-8 col-xs-offset-4">
+			<h3>Guardians' Information</h3>
+		</div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Name</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Please Enter Guardians' Name" name="GName" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Age</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Please Enter Guardians' Age" name="GAge" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Occupation</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Please Enter Guardians' Occupation" name="GJob" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Gender</label>
+			<div class="col-xs-8">
+                <select class="form-control" name="Gender" required="required">
+                    <option> </option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Tel. Number Line1</label>
+			<div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Please Enter Telephone Number" name="TLine1" required="required">
+            </div>
+        </div>
+        <div class="form-group">
+			<label class="control-label col-xs-4">Tel. Number Line 2</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Please Enter Telephone Number" name="TLine2" required="required">
+            </div>
+        </div>
+		<div class="form-group">
+			<div class="col-xs-8 col-xs-offset-4">
+				<button type="submit" class="btn btn-primary btn-lg">Register</button>
+			</div>
+		</div>
+    </form>
+</div>
+</body>
+</html>
